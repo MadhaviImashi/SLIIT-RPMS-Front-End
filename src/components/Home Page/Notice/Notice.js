@@ -5,9 +5,8 @@ import React from 'react';
 const Notice = () => {
   return (
     <div className="notice-container">
-      <div>
-        <p className="text-center">Notices</p>
-      </div>
+      <p className="text-center">Notices</p>
+      <div className="notice-card-container"></div>
     </div>
   );
 };
