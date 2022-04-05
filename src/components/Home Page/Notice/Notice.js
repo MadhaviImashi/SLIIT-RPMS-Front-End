@@ -1,6 +1,6 @@
-import React from 'react';
-import './Notice.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Notice.css';
+import React from 'react';
 
 const Notice = () => {
   return (
