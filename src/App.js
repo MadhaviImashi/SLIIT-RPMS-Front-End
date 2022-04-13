@@ -1,9 +1,9 @@
-import Notice from './components/Home Page/Notice/Notice';
+import Home from './components/Home Page/Home';
 
 function App() {
   return (
     <div>
-      <Notice />
+      <Home />
     </div>
   );
 }
