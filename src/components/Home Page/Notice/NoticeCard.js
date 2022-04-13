@@ -1,5 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import './Notice.css';
+import './NoticeCard.css';
 const NoticeCard = () => {
   return (
     <div className="box red col-lg-2 col-md-12 col-sm-2">
