@@ -9,6 +9,8 @@ import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { useState } from 'react';
+import { FormControlLabel, TextField } from '@mui/material';
+import { Checkbox } from 'antd';
 
 const Login = () => {
   const [values, setValues] = useState({
@@ -48,11 +50,12 @@ const Login = () => {
             <Box
               component="form"
               sx={{
-                '& .MuiTextField-root': { m: 1, width: '25ch' }
+                '& .MuiTextField-root': { m: 1, width: '80%' }
               }}
               noValidate
               autoComplete="off">
-              <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+              <TextField id="outlined-email-input" label="Email" type="email" />
+              <FormControl sx={{ m: 1, width: '80%' }} variant="outlined">
                 <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                 <OutlinedInput
                   id="outlined-adornment-password"
@@ -73,6 +76,17 @@ const Login = () => {
                   label="Password"
                 />
               </FormControl>
+              <div className="d-flex justify-content-between forgot-password">
+                <FormControlLabel
+                  sx={{ m: 1, width: 'auto' }}
+                  control={
+                    <Checkbox defaultChecked sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
+                  }
+                  label="Remember Me"
+                />
+                <a href="#"> forgot password</a>
+              </div>
+              <input type="submit" value="Login" className="btn btn-primary btn-block submit-btn" />
             </Box>
           </form>
         </div>

@@ -5,3 +5,24 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+.heading-main{
+  font-size:2rem;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.sub-heading{
+  font-size:1rem;
+  margin-top: 20px;
+  width:80%;
+  text-align: justify;
+}
+
+.forgot-password{
+  width:80%;
+}
+
+.submit-btn{
+  width:80%;
+}
