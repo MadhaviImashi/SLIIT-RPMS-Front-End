@@ -7,13 +7,7 @@ const SignUp = () => {
       <Container>
         <Row className="signup-container no-gutters">
           <Col md className="signup-bg-image img-fluid col-lg-7">
-            <div className="bg-text">
-              {/* <h1 className="mb-4">Creat Account</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate
-                doloremque dolores enim eum excepturi, exercitationem facere
-              </p> */}
-            </div>
+            <div className="bg-text"></div>
           </Col>
           <Col md className="signup-form-wrapper col-lg-5">
             <Form>
@@ -30,7 +24,7 @@ const SignUp = () => {
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Registration Number ( Ex: IT12345678 )"></Form.Control>
+                  placeholder="Registration No ( Ex: IT12345678 )"></Form.Control>
               </Form.Group>
 
               <Form.Select className="mb-4" aria-label="Default select example">
