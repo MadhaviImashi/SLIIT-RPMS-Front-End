@@ -18,7 +18,9 @@ const SignUp = () => {
           <Col md className="signup-form-wrapper col-lg-5">
             <Form>
               <h1 className="form-title mb-3 mt-4">Sign Up</h1>
-              <p className="sub-title mb-4">Fill up the form to create an account</p>
+              <p className="sub-title mb-4">
+                Student can fill in the below form to create an account
+              </p>
 
               <Form.Group className="mb-4" controlId="name">
                 <Form.Control required type="text" placeholder="Name"></Form.Control>
@@ -65,6 +67,9 @@ const SignUp = () => {
 
               <p className="hyperlink mb-4">
                 Already have an account? <a href="#">Login</a>
+              </p>
+              <p className="hyperlink mb-4">
+                <a href="#">Register</a> as a staff member
               </p>
             </Form>
           </Col>

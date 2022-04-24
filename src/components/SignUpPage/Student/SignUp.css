@@ -14,7 +14,8 @@
 }
 
 .sub-title {
-    font-weight: 100;
+    font-weight: 700;
+    opacity: 0.4;
 }
 
 .signup-form-wrapper {
@@ -40,7 +41,7 @@
 }
 
 .signup-bg-image {
-    background-image: url('../../../assets/signup-img.jpg');
+    background-image: url('../../../assets/studentSignup.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +75,7 @@
     }
 
     .signup-bg-image {
-        background-image: url('../../../assets/staffSignUp.jpg');
+        background-image: url('../../../assets/studentSignup.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
