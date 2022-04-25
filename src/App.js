@@ -4,11 +4,11 @@ import Login from './components/LoginPage/Login';
 import StaffSignUp from './components/SignUpPage/Staff/SignUp';
 import StudentSignUp from './components/SignUpPage/Student/SignUp';
 
+import Home from './components/Home Page/Home';
 function App() {
   return (
     <div>
-      {/* <Login /> */}
-      <StudentSignUp />
+      <Home />
     </div>
   );
 }
