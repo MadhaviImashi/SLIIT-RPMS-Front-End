@@ -1,4 +1,4 @@
-.right-img {
+/* .right-img {
   background-image: url('../../assets/login.jpg');
   background-size: cover;
   background-position: center;
@@ -17,12 +17,126 @@
   margin-top: 20px;
   width:80%;
   text-align: justify;
-}
+} */
 
 .forgot-password{
-  width:80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.submit-btn{
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  margin-left: 5px;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* .submit-btn{
   width:80%;
+} */
+
+.login-outer-wrapper {
+  padding-top: 10%;
+}
+
+.login-container {
+  /* background-color: rgb(0, 1, 1); */
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px rgba(57, 57, 57, 0.783);
+}
+
+.form-title {
+  font-weight: bold;
+}
+
+.sub-title {
+  font-weight: 700;
+  opacity: 0.4;
+}
+
+.login-form-wrapper {
+  padding: 0 25px;
+}
+
+.btn-login {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 6px 6px 12px rgba(57, 57, 57, 0.783);
+}
+
+.btn-login:hover {
+  background-color: white;
+  border: 1px solid;
+  color: black;
+}
+
+.login-bg-image {
+  background-image: url('../../assets/login.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  /* filter: blur(1px); */
+}
+
+.bg-text {
+color: rgb(255 255 255 / 92%);
+font-weight: bold;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 80%;
+padding: 20px;
+text-align: center;
+}
+
+.hyperlink {
+  text-align: center;
+}
+
+.login-email {
+  border-radius: 10px;
+}
+
+.css-1nrlq1o-MuiFormControl-root {
+  min-width: 100% !important;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .login-outer-wrapper {
+      padding: 0 20px !important;
+  }
+
+  .login-bg-image {
+      background-image: url('../../assets/login.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 400px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      /* filter: blur(1px); */
+  }
+  .bg-text {
+      display: none;
+  }
+  .login-container {
+      border-radius: 0;
+  }
 }
