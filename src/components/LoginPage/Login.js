@@ -51,7 +51,8 @@ const Login = () => {
                 '& .MuiTextField-root': { m: 1, width: '25ch' }
               }}
               noValidate
-              autoComplete="off">
+              autoComplete="off"
+            >
               <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
                 <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                 <OutlinedInput
@@ -65,7 +66,8 @@ const Login = () => {
                         aria-label="toggle password visibility"
                         onClick={handleClickShowPassword}
                         onMouseDown={handleMouseDownPassword}
-                        edge="end">
+                        edge="end"
+                      >
                         {values.showPassword ? <VisibilityOff /> : <Visibility />}
                       </IconButton>
                     </InputAdornment>
