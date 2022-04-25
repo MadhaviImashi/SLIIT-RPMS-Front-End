@@ -13,7 +13,7 @@ const SignUp = () => {
             <Form>
               <h1 className="form-title mb-3 mt-4">Sign Up</h1>
               <p className="sub-title mb-4">
-                Staff members can fill in the below form to create an account
+                Staff members can fill in the below form to create an account.
               </p>
 
               <Form.Group className="mb-4" controlId="name">
@@ -24,25 +24,47 @@ const SignUp = () => {
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Registration Number ( Ex: IT12345678 )"></Form.Control>
+                  placeholder="Registration No ( Ex: IT12345678 )"></Form.Control>
               </Form.Group>
 
               <Form.Select className="mb-4" aria-label="Default select example">
                 <option>Faculty</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="FOC">Faculty Of Computing</option>
+                <option value="FOE">Faculty Of Engineering</option>
+                <option value="BM">Faculty Of Business Management</option>
+                <option value="HS">Faculty Of Humanity & Sciences</option>
+                <option value="SA">School Of Architecture</option>
               </Form.Select>
 
-              <Form.Select className="mb-4" aria-label="Default select example">
-                <option>Specialization</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </Form.Select>
+              <div key="inline-radio" className="mb-3">
+                <Form.Check
+                  inline
+                  label="Panel member"
+                  name="role"
+                  value="panel"
+                  type="radio"
+                  id="panel"
+                />
+                <Form.Check
+                  inline
+                  label="Supervisor"
+                  name="role"
+                  value="Supervisor"
+                  type="radio"
+                  id="supervisor"
+                />
+                <Form.Check
+                  inline
+                  label="Co-supervisor"
+                  name="role"
+                  value="co-supervisor"
+                  type="radio"
+                  id="coSupervisor"
+                />
+              </div>
 
               <Form.Group className="mb-4" controlId="email">
-                <Form.Control required type="email" placeholder="Email" />
+                <Form.Control required type="email" placeholder="Email ( Ex: abc@gmail.com )" />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="pwd">
