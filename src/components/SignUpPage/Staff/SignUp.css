@@ -1,4 +1,4 @@
-.container {
+.outer-wrapper {
     padding-top: 5%;
 }
 
@@ -40,7 +40,7 @@
     color: black;
 }
 
-.signup-bg-image {
+.staff-signup-bg-image {
     background-image: url('../../../assets/signup-img.jpg');
     background-size: cover;
     background-position: center;
@@ -70,11 +70,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
+    .outer-wrapper {
         padding: 0 20px !important;
     }
 
-    .signup-bg-image {
+    .staff-signup-bg-image {
         background-image: url('../../../assets/staffSignUp.jpg');
         background-size: cover;
         background-position: center;
