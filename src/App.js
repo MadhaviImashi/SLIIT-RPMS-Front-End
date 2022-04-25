@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './components/Home Page/Home';
 
-
 function App() {
   return (
     <div>
@@ -12,4 +11,3 @@ function App() {
 }
 
 export default App;
-
