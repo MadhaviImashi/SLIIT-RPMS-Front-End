@@ -50,7 +50,7 @@ const Login = () => {
               <p className="sub-title mb-4">Sign in to your SLIIT RPMS account</p>
 
               <Form.Group className="login-email mb-4" controlId="email">
-                <Form.Control required type="email" placeholder="Email" />
+                <Form.Control className="input-email" required type="email" placeholder="Email" />
               </Form.Group>
 
               <FormControl className="mb-3">
