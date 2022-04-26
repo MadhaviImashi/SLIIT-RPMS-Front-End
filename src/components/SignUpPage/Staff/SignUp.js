@@ -4,7 +4,7 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 const SignUp = () => {
   return (
     <div>
-      <Container className="outer-wrapper">
+      <Container className="staff-signup-outer-wrapper">
         <Row className="signup-container no-gutters">
           <Col md className="staff-signup-bg-image img-fluid col-lg-7">
             <div className="bg-text"></div>
