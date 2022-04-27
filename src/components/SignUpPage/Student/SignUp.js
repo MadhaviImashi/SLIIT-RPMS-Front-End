@@ -21,20 +21,10 @@ const SignUp = () => {
   const setDynamicDropdownOptions = () => {
     specObj.forEach((degree) => {
       if (selectedOption === degree.name) {
-        console.log('inside if selection', selectedOption, degree.name);
         const target = document.getElementById('specialization');
         target.innerHTML = '<option>Specialization</option>';
         degree.spec.forEach((spec) => {
-          console.log('specialization', spec);
           target.innerHTML += '<option value=' + spec + '>' + spec + '</option>';
-          // return (
-          //   <>
-          //     <option>Faculty2</option>
-          //     {/* <option value $ {...spec}>
-          //       ${spec}
-          //     </option> */}
-          //   </>
-          // );
         });
       }
     });
@@ -42,7 +32,6 @@ const SignUp = () => {
 
   return (
     <div>
-      {'opt ' + selectedOption}
       <Container className="student-signup-outer-wrapper">
         <Row className="signup-container no-gutters">
           <Col md className="student-signup-bg-image img-fluid col-lg-7">
@@ -79,14 +68,8 @@ const SignUp = () => {
                 <option value="SA">School Of Architecture</option>
               </Form.Select>
 
-              {/* <Form.Group className="mb-4" controlId="specialization">
-                <Form.Control required type="text" placeholder="Specialization"></Form.Control>
-              </Form.Group> */}
               <Form.Select className="mb-4" aria-label="Default select example" id="specialization">
                 <option>Specialization</option>
-                {/* {specObj.forEach((degree) => {
-                  setDynamicDropdownOptions(degree);
-                })} */}
                 <>{setDynamicDropdownOptions()}</>
               </Form.Select>
 
