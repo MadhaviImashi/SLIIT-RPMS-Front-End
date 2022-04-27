@@ -1,7 +1,27 @@
 import './SignUp.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { useState } from 'react';
 
 const SignUp = () => {
+  const [studentDetails, setStudentDetails] = useState({
+    name: '',
+    registrationNo: '',
+    faculty: '',
+    specialization: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const inputChangeHandler = (event) => {
+    setStudentDetails({ ...studentDetails, [event.target.name]: event.target.value });
+  };
+
+  const signUpFormSubmitHandler = (event) => {
+    event.preventDefault();
+    console.log(studentDetails);
+  };
+
   return (
     <div>
       <Container className="outer-wrapper">
@@ -10,25 +30,38 @@ const SignUp = () => {
             <div className="bg-text"></div>
           </Col>
           <Col md className="signup-form-wrapper col-lg-5">
-            <Form>
+            <Form onSubmit={signUpFormSubmitHandler}>
               <h1 className="form-title mb-3 mt-4">Sign Up</h1>
               <p className="sub-title mb-4">
                 Student can fill in the below form to create an account.
               </p>
 
               <Form.Group className="mb-4" controlId="name">
-                <Form.Control required type="text" placeholder="Name"></Form.Control>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  onChange={(e) =>
+                    setStudentDetails({ ...studentDetails, name: e.target.value })
+                  }></Form.Control>
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="registrationNo">
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Registration No ( Ex: IT12345678 )"></Form.Control>
+                  placeholder="Registration No ( Ex: IT12345678 )"
+                  name="registrationNo"
+                  onChange={inputChangeHandler}></Form.Control>
               </Form.Group>
 
-              <Form.Select className="mb-4" aria-label="Default select example">
-                <option>Faculty</option>
+              <Form.Select
+                className="mb-4"
+                aria-label="Default select example"
+                onChange={inputChangeHandler}
+                name="faculty">
+                <option name="faculty">Faculty</option>
                 <option value="FOC">Faculty Of Computing</option>
                 <option value="FOE">Faculty Of Engineering</option>
                 <option value="BM">Faculty Of Business Management</option>
@@ -37,19 +70,42 @@ const SignUp = () => {
               </Form.Select>
 
               <Form.Group className="mb-4" controlId="specialization">
-                <Form.Control required type="text" placeholder="Specialization"></Form.Control>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Specialization"
+                  name="specialization"
+                  onChange={inputChangeHandler}></Form.Control>
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="email">
-                <Form.Control required type="email" placeholder="Email ( Ex: abc@gmail.com )" />
+                <Form.Control
+                  required
+                  type="email"
+                  placeholder="Email ( Ex: abc@gmail.com )"
+                  name="email"
+                  onChange={inputChangeHandler}
+                />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="pwd">
-                <Form.Control required type="password" placeholder="Password" />
+                <Form.Control
+                  required
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  onChange={inputChangeHandler}
+                />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="confirmPwd">
-                <Form.Control required type="password" placeholder="Confirm Password" />
+                <Form.Control
+                  required
+                  type="password"
+                  placeholder="Confirm Password"
+                  name="confirmPassword"
+                  onChange={inputChangeHandler}
+                />
               </Form.Group>
 
               <div className="mb-4">
