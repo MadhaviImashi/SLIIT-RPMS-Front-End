@@ -1,4 +1,4 @@
-.forgot-password{
+.forgot-password {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,16 +68,16 @@
 }
 
 .bg-text {
-color: rgb(255 255 255 / 92%);
-font-weight: bold;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 2;
-width: 80%;
-padding: 20px;
-text-align: center;
+  color: rgb(255 255 255 / 92%);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 
 .hyperlink {
@@ -99,23 +99,23 @@ text-align: center;
 
 @media only screen and (max-width: 768px) {
   .login-outer-wrapper {
-      padding: 0 20px !important;
+    padding: 0 20px !important;
   }
 
   .login-bg-image {
-      background-image: url('../../assets/login.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 400px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      /* filter: blur(1px); */
+    background-image: url('../../assets/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /* filter: blur(1px); */
   }
   .bg-text {
-      display: none;
+    display: none;
   }
   .login-container {
-      border-radius: 0;
+    border-radius: 0;
   }
 }

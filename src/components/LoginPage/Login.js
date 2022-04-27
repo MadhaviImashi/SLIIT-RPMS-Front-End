@@ -87,6 +87,7 @@ const Login = () => {
               </div>
 
               <p className="hyperlink mb-4">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Don't have an account? <a href="#">Register</a>
               </p>
             </Form>
