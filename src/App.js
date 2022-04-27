@@ -1,15 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import Login from './components/LoginPage/Login';
-import StaffSignUp from './components/SignUpPage/Staff/SignUp';
-import StudentSignUp from './components/SignUpPage/Student/SignUp';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home Page/Home';
+import SignUp from './components/SignUpPage/Student/SignUp';
 
 function App() {
   return (
-    <div>
-      {/* <Login /> */}
-      <Login />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/student-register" element={<SignUp />} />
+      </Routes>
   );
 }
 
