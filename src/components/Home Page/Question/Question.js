@@ -1,8 +1,7 @@
 import './Question.css';
 import { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 
 const Question = () => {
   const [selected, setSelected] = useState(null);
@@ -23,7 +22,7 @@ const Question = () => {
             <div className="wrapper">
               <div className="accordion">
                 {data.map((item, i) => (
-                  <div className="item">
+                  <div key={i} className="item">
                     <div className="title" onClick={() => toggle(i)}>
                       <h2>{item.question}</h2>
                       <span>{selected == i ? '-' : '+'}</span>

@@ -1,11 +1,13 @@
 import './SignUp.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+
 import { useState } from 'react';
+import axios from 'axios';
 
 const SignUp = () => {
   const [studentDetails, setStudentDetails] = useState({
     name: '',
-    registrationNo: '',
+    studentId: '',
     faculty: '',
     specialization: '',
     email: '',
@@ -19,7 +21,14 @@ const SignUp = () => {
 
   const signUpFormSubmitHandler = (event) => {
     event.preventDefault();
-    console.log(studentDetails);
+    axios
+      .post('http://127.0.0.1:4000/api/student-signup', studentDetails)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   return (
@@ -52,7 +61,7 @@ const SignUp = () => {
                   required
                   type="text"
                   placeholder="Registration No ( Ex: IT12345678 )"
-                  name="registrationNo"
+                  name="studentId"
                   onChange={inputChangeHandler}></Form.Control>
               </Form.Group>
 
