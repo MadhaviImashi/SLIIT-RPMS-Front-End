@@ -1,5 +1,6 @@
 import './SignUp.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   return (
@@ -82,10 +83,10 @@ const SignUp = () => {
               </div>
 
               <p className="hyperlink mb-2">
-                Already have an account? <a href="#">Login</a>
+                Already have an account?<Link to="/login">Login</Link>
               </p>
               <p className="hyperlink mb-4">
-                <a href="#">Register</a> as a student
+                <Link to="/student-register">Register</Link> as a student
               </p>
             </Form>
           </Col>

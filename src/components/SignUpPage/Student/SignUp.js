@@ -1,7 +1,36 @@
 import './SignUp.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
+  const specObj = [
+    { name: 'FOC', spec: ['DS', 'IT', 'SE'] },
+    { name: 'FOE', spec: ['ENG', 'Archi'] },
+    { name: 'BM', spec: ['BM1', 'BM2', 'BM3'] },
+    { name: 'HS', spec: ['Humanity Sciences 1', 'Humanity Sciences 2'] },
+    { name: 'SA', spec: ['Archi1', 'Archi2'] }
+  ];
+
+  const [selectedOption, setOption] = useState(null);
+
+  const handleSelectFaculty = () => {
+    let option = document.getElementById('fac');
+    setOption(option.value);
+  };
+
+  const setDynamicDropdownOptions = () => {
+    specObj.forEach((degree) => {
+      if (selectedOption === degree.name) {
+        const target = document.getElementById('specialization');
+        target.innerHTML = '<option>Specialization</option>';
+        degree.spec.forEach((spec) => {
+          target.innerHTML += '<option value=' + spec + '>' + spec + '</option>';
+        });
+      }
+    });
+  };
+
   return (
     <div>
       <Container className="student-signup-outer-wrapper">
@@ -27,7 +56,11 @@ const SignUp = () => {
                   placeholder="Registration No ( Ex: IT12345678 )"></Form.Control>
               </Form.Group>
 
-              <Form.Select className="mb-4" aria-label="Default select example">
+              <Form.Select
+                className="mb-4"
+                aria-label="Default select example"
+                id="fac"
+                onChange={handleSelectFaculty}>
                 <option>Faculty</option>
                 <option value="FOC">Faculty Of Computing</option>
                 <option value="FOE">Faculty Of Engineering</option>
@@ -36,9 +69,10 @@ const SignUp = () => {
                 <option value="SA">School Of Architecture</option>
               </Form.Select>
 
-              <Form.Group className="mb-4" controlId="specialization">
-                <Form.Control required type="text" placeholder="Specialization"></Form.Control>
-              </Form.Group>
+              <Form.Select className="mb-4" aria-label="Default select example" id="specialization">
+                <option>Specialization</option>
+                <>{setDynamicDropdownOptions()}</>
+              </Form.Select>
 
               <Form.Group className="mb-4" controlId="email">
                 <Form.Control required type="email" placeholder="Email ( Ex: abc@gmail.com )" />
@@ -59,10 +93,10 @@ const SignUp = () => {
               </div>
 
               <p className="hyperlink mb-4">
-                Already have an account? <a href="#">Login</a>
+                Already have an account? <Link to="/login">Login</Link>
               </p>
               <p className="hyperlink mb-4">
-                <a href="#">Register</a> as a staff member
+                <Link to="/staff-register">Register</Link> as a staff member
               </p>
             </Form>
           </Col>
