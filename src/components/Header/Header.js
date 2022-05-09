@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './Header.css';
 import logo from '../../assets/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Head = () => {
   const [expand, setexpand] = React.useState(false);
@@ -53,7 +54,9 @@ const Head = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <button className="bn632-hover bn26">Login</button>
+              <button className="bn632-hover bn26">
+                <Link to="/login">Login</Link>
+              </button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

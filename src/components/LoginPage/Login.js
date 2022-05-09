@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { FormControlLabel } from '@mui/material';
 import { Checkbox } from 'antd';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [values, setValues] = useState({
@@ -89,7 +90,7 @@ const Login = () => {
 
               <p className="hyperlink mb-4">
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Don't have an account? <a href="#">Register</a>
+                Don't have an account?<Link to="/student-register">Register</Link>
               </p>
             </Form>
           </Col>

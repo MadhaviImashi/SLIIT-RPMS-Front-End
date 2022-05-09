@@ -1,6 +1,7 @@
 import './SignUp.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const specObj = [
@@ -92,10 +93,10 @@ const SignUp = () => {
               </div>
 
               <p className="hyperlink mb-4">
-                Already have an account? <a href="#">Login</a>
+                Already have an account? <Link to="/login">Login</Link>
               </p>
               <p className="hyperlink mb-4">
-                <a href="#">Register</a> as a staff member
+                <Link to="/staff-register">Register</Link> as a staff member
               </p>
             </Form>
           </Col>
