@@ -45,15 +45,14 @@
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-input[type='text'],
-input[type='password'] {
+.input-text .input-password {
   padding: 10px 20px;
   height: 50px;
   max-width: 600px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-input[type='submit'] {
+.input-submit {
   margin-top: 10px;
   cursor: pointer;
   font-size: 15px;
@@ -63,7 +62,7 @@ input[type='submit'] {
   padding: 8px 100px;
 }
 
-input[type='submit']:hover {
+.input-submit:hover {
   background: #f06cd3;
 }
 

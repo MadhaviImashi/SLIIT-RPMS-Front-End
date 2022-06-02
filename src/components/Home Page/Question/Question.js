@@ -40,14 +40,26 @@ const Question = () => {
               </h4>
               <form>
                 <div className="input-container">
-                  <input type="text" placeholder="Your primary email" name="uname" required />
+                  <input
+                    type="text"
+                    className="input-text"
+                    placeholder="Your primary email"
+                    name="uname"
+                    required
+                  />
                 </div>
 
                 <div className="input-container">
-                  <input type="password" placeholder="Question" name="pass" required />
+                  <input
+                    type="password"
+                    className="input-password"
+                    placeholder="Question"
+                    name="pass"
+                    required
+                  />
                 </div>
 
-                <div className="button-container">
+                <div className="button-container input-submit">
                   <input type="submit" />
                 </div>
               </form>
