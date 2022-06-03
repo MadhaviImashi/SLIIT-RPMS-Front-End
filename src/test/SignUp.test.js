@@ -1,22 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import SignUp from '../components/SignUpPage/Student/SignUp';
-// import { createRoot } from 'react-dom/client';
 import 'regenerator-runtime/runtime.js';
 import { BrowserRouter } from 'react-router-dom';
-
-jest.mock('axios', () => ({
-  __esModule: true,
-
-  default: {
-    get: () => ({
-      data: { id: 1, name: 'John' }
-    })
-  }
-}));
-
-// const container = document.getElementById('root');
-// const root = createRoot(container);
 
 test('email input should be rendered', () => {
   render(
