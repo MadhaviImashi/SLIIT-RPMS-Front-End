@@ -75,7 +75,7 @@ const SignUp = () => {
               </Form.Select>
 
               <Form.Group className="mb-4" controlId="email">
-                <Form.Control required type="email" placeholder="Email ( Ex: abc@gmail.com )" />
+                <Form.Control required type="email" placeholder="Email" />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="pwd">
@@ -87,7 +87,7 @@ const SignUp = () => {
               </Form.Group>
 
               <div className="mb-4">
-                <Button type="submit" className="btn-login">
+                <Button disabled={false} type="submit" className="btn-login">
                   Register
                 </Button>
               </div>
