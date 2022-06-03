@@ -9,7 +9,7 @@ const Hero = () => {
       <Container className="hero-content">
         <Row>
           <Col md={7} className="hero-header">
-            <h1 style={{ paddingBottom: 15 }} className="heading">
+            <h1 data-testid="home-title" style={{ paddingBottom: 15 }} className="heading">
               Research with easy management and collaboration
             </h1>
             <h4 className="desc">Research management tool for students and academic staff </h4>
