@@ -11,6 +11,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.19.5",
+    "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
     "formik": "^2.2.9",
     "husky": "^7.0.4",
@@ -24,10 +25,17 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
+    },
+    "testEnvironment": "jest-environment-jsdom"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
@@ -53,11 +61,19 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.0",
+    "babel-polyfill": "^6.0.16",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "jest": "^28.1.0",
-    "prettier": "^2.6.2"
+    "jest-environment-jsdom": "^28.1.0",
+    "prettier": "^2.6.2",
+    "regenerator-runtime": "^0.13.9"
   }
 }
