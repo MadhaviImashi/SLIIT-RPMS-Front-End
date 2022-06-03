@@ -83,7 +83,11 @@ const Login = () => {
               </div>
 
               <div className="mb-4">
-                <Button type="submit" className="btn-login">
+                <Button
+                  data-testid="login-btn"
+                  disabled={false}
+                  type="submit"
+                  className="btn-login">
                   Login
                 </Button>
               </div>
