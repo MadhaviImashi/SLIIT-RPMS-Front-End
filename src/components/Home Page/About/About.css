@@ -1,0 +1,61 @@
+p {
+  color: #878b8a;
+  font-weight: 500;
+}
+.about-container {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.about-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.about-description {
+  margin-bottom: 40px;
+}
+
+.about-item-container {
+  text-align: -webkit-center;
+  margin-bottom: 30px;
+}
+
+.about-item-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  min-height: 58px;
+  max-width: 300px;
+}
+
+.about-item-description {
+}
+
+.about-item-icon {
+  margin-bottom: 20px;
+}
+
+.about-item-icon .css-tzssek-MuiSvgIcon-root {
+  font-size: 2.5rem;
+}
+.trendingUpIcon {
+  color: green;
+}
+
+.groupsRoundedIcon {
+  color: rgb(0, 136, 255);
+}
+
+.manageHistoryIcon {
+  color: rgb(255, 0, 72);
+}
+
+@media only screen and (max-width: 576px) {
+  .about-item-title {
+    min-height: 0;
+  }
+  .about-item-icon {
+    margin-bottom: 10px;
+  }
+}
