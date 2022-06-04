@@ -8,9 +8,9 @@ function DetailsModal(props) {
       <Modal.Header closeButton>
         <Modal.Title id="file-input">Panel Allocation</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="allocate-allocation-modal">
         <VerifyAndSave data={props.data?props.data:[]} btns={false}/>
-        <div className="d-flex justify-content-end">
+        <div className="d-flex justify-content-end panel-allocation-close-btn">
           <Button onClick={()=>{props.onHide()}}>Close</Button>
         </div>
       </Modal.Body>
