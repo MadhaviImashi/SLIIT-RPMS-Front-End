@@ -1,0 +1,35 @@
+.react-calendar {
+  max-width: 25rem;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+  padding: 15px;
+}
+.react-calendar--doubleView {
+    width: 7px;
+  }
+  .react-calendar__navigation{
+    height: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+.react-calendar__tile{
+
+  line-height: 0.5rem;
+  font-size: 12px;
+}
+.react-calendar__month-view__weekdays__weekday{
+ 
+  padding: 0;
+  font-size: 12px;
+}
+.react-calendar {
+  width: 90%;
+  padding: 3px;
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+.react-calendar__navigation button{
+  min-width: 28px;
+}
