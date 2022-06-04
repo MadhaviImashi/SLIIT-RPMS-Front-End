@@ -6,6 +6,7 @@ import SideNav from "../../shared/SideNav/SideNav";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
+//Evaluate topic
 const EvaluateTopic = () => {
   const [evaluateTopics, setEvaluateTopics] = useState([]);
   const academicStaffId = useSelector((state) => state.login.userID);
