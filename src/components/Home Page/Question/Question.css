@@ -1,0 +1,63 @@
+.x{
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-position:right -220px center;
+  background-image: url("../../../assets/main5.svg");
+
+}
+
+
+.card1{
+
+}
+.y{
+  box-shadow: 5px 5px 0px 0px rgba(40, 159, 237, 0.27), 10px 10px 0px 0px rgba(95, 184, 255, 0.17), 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.parent {
+  padding-bottom: 500px;
+  background-repeat: no-repeat;
+  background-position:right -290px center;
+  background-image: url("../../../assets/main5.svg");
+}
+.para{
+  text-align: center;
+}
+
+.pulse {
+  animation: pulse 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.loadable {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin: 0 auto 0 30%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+img {
+  display: block;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+
+.img1{
+  margin-left: 190px;
+  text-align: center;
+}
+
+
+@media (max-width: 1400px) {
+  .showall {
+    display: none;
+  }
+}
+
