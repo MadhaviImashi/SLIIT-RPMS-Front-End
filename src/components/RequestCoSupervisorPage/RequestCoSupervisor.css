@@ -1,0 +1,16 @@
+.request-supervisor-bg-color{
+    background-color: #F9F9F9!important;
+}
+
+.request-item{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reqest-status-item{
+    width: fit-content;
+    border-radius: 0.8rem !important;
+}
