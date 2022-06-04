@@ -17,6 +17,7 @@ body {
   outline: 1px solid #dddddd;
   width: 100% !important;
   margin-top: 0.2rem;
+  padding: 10px;
 }
 
 .input:focus {
