@@ -4,7 +4,7 @@ import { Button, Col, Row, Card } from "react-bootstrap";
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Message from '../Message/Message';
 
-
+//Request card
 const RequestCard = ({ group, topic, description, groupId, reFetch }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isMessage, setIsMessage] = useState(false);
