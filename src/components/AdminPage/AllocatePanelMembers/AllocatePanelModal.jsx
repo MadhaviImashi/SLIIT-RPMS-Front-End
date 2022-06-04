@@ -60,7 +60,7 @@ function AllocatePanelModal({show,setAllocateModalShow,setRefresh,groupDetails,o
       <Modal.Header closeButton>
         <Modal.Title id="file-input">Allocate Panel Members</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="allocate-panel-modal-wrap">
         <div className="d-flex justify-content-center">
           <Box sx={{ width: "100%", p: 3 }}>
             <Stepper activeStep={activeStep}>
