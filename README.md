@@ -17,10 +17,7 @@ Back-End Hosted link: https://af-rpms-backend.herokuapp.com/
 
 ***
 ### Tools and Technologies used
-<img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="40px" height="40px">
-<img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="40px" height="40px">
-<img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/mongodb-icon.svg" alt="MongoDB" width="40px" height="40px">
-<img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI" width="40px" height="40px">
+<img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="40px" height="40px"> <img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="40px" height="40px"> <img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/mongodb-icon.svg" alt="MongoDB" width="40px" height="40px"> <img data-v-33f837d1="" src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI" width="40px" height="40px">
 
 ***
 ### To run the application 
